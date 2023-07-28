@@ -1297,6 +1297,8 @@ fn resolveTypeOfNodeUncached(analyser: *Analyser, node_handle: NodeWithHandle) e
                 return try child.resolveType(analyser);
             } else return null;
         },
+        .anyframe_literal,
+        .anyframe_type,
         .array_type,
         .array_type_sentinel,
         .optional_type,
